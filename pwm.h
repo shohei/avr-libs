@@ -3,8 +3,8 @@
 
 class Pwm{
 public:
-  void PWM16_init();
-  void PWM16_write(int percentage);
+  static void PWM16_init();
+  static void PWM16_write(int percentage);
 };
 
 #endif

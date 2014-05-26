@@ -3,8 +3,8 @@
 
 class Adc {
 public:
-  void adc_init();
-  int adc_conv(int pin);
+  static void adc_init();
+  static int adc_conv(int pin);
 };
 
 #endif

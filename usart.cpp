@@ -13,7 +13,7 @@ int Usart::getUBRR(int baud, unsigned long fosc){
 void Usart::USART_init(unsigned int ubrr){
   UBRR0H = (ubrr>>8);
   UBRR0L = ubrr;
-  UCSR0B = _BV(RXEN0)|_BV(TXEN0); 
+  UCSR0B = _BV(RXEN0)|_BV(TXEN0)|_BV(RXCIE0); 
   UCSR0C = (3<<UCSZ00);
 }
 
